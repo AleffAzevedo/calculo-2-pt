@@ -1,0 +1,274 @@
+% Capa do livro (TikZ, página inteira)
+% identidade Nexus BI: grafite #353535 e verde-nexus #AFE213
+\definecolor{noite}{HTML}{2B2B2B}
+\definecolor{marinho}{HTML}{353535}
+\definecolor{ouro}{HTML}{AFE213}
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay,
+  ]
+% fundo
+\shade[top color=noite,bottom color=marinho] (current page.south west) rectangle (current page.north east);
+\begin{scope}[shift={(current page.south west)}]
+  % grade discreta
+  \draw[white,opacity=0.05,line width=0.3pt,step=1cm] (0,0) grid (21,29.7);
+  % campo de direções (EDO) em marca-d'água
+  \draw[white,opacity=0.10,line width=0.5pt] (0.83,2.78) -- (1.17,3.22);
+  \draw[white,opacity=0.10,line width=0.5pt] (0.82,3.79) -- (1.18,4.21);
+  \draw[white,opacity=0.10,line width=0.5pt] (0.81,4.80) -- (1.19,5.20);
+  \draw[white,opacity=0.10,line width=0.5pt] (0.79,5.81) -- (1.21,6.19);
+  \draw[white,opacity=0.10,line width=0.5pt] (0.78,6.83) -- (1.22,7.17);
+  \draw[white,opacity=0.10,line width=0.5pt] (0.76,7.86) -- (1.24,8.14);
+  \draw[white,opacity=0.10,line width=0.5pt] (0.74,8.89) -- (1.26,9.11);
+  \draw[white,opacity=0.10,line width=0.5pt] (0.73,9.92) -- (1.27,10.08);
+  \draw[white,opacity=0.10,line width=0.5pt] (0.72,10.96) -- (1.28,11.04);
+  \draw[white,opacity=0.10,line width=0.5pt] (0.72,12.00) -- (1.28,12.00);
+  \draw[white,opacity=0.10,line width=0.5pt] (0.72,13.04) -- (1.28,12.96);
+  \draw[white,opacity=0.10,line width=0.5pt] (1.81,2.79) -- (2.19,3.21);
+  \draw[white,opacity=0.10,line width=0.5pt] (1.80,3.81) -- (2.20,4.19);
+  \draw[white,opacity=0.10,line width=0.5pt] (1.78,4.82) -- (2.22,5.18);
+  \draw[white,opacity=0.10,line width=0.5pt] (1.77,5.84) -- (2.23,6.16);
+  \draw[white,opacity=0.10,line width=0.5pt] (1.75,6.87) -- (2.25,7.13);
+  \draw[white,opacity=0.10,line width=0.5pt] (1.74,7.90) -- (2.26,8.10);
+  \draw[white,opacity=0.10,line width=0.5pt] (1.73,8.94) -- (2.27,9.06);
+  \draw[white,opacity=0.10,line width=0.5pt] (1.72,9.98) -- (2.28,10.02);
+  \draw[white,opacity=0.10,line width=0.5pt] (1.72,11.02) -- (2.28,10.98);
+  \draw[white,opacity=0.10,line width=0.5pt] (1.73,12.06) -- (2.27,11.94);
+  \draw[white,opacity=0.10,line width=0.5pt] (1.74,13.10) -- (2.26,12.90);
+  \draw[white,opacity=0.10,line width=0.5pt] (2.78,2.83) -- (3.22,3.17);
+  \draw[white,opacity=0.10,line width=0.5pt] (2.76,3.85) -- (3.24,4.15);
+  \draw[white,opacity=0.10,line width=0.5pt] (2.75,4.88) -- (3.25,5.12);
+  \draw[white,opacity=0.10,line width=0.5pt] (2.73,5.92) -- (3.27,6.08);
+  \draw[white,opacity=0.10,line width=0.5pt] (2.72,6.95) -- (3.28,7.05);
+  \draw[white,opacity=0.10,line width=0.5pt] (2.72,8.00) -- (3.28,8.00);
+  \draw[white,opacity=0.10,line width=0.5pt] (2.72,9.04) -- (3.28,8.96);
+  \draw[white,opacity=0.10,line width=0.5pt] (2.73,10.08) -- (3.27,9.92);
+  \draw[white,opacity=0.10,line width=0.5pt] (2.74,11.11) -- (3.26,10.89);
+  \draw[white,opacity=0.10,line width=0.5pt] (2.76,12.14) -- (3.24,11.86);
+  \draw[white,opacity=0.10,line width=0.5pt] (2.77,13.17) -- (3.23,12.83);
+  \draw[white,opacity=0.10,line width=0.5pt] (3.74,2.89) -- (4.26,3.11);
+  \draw[white,opacity=0.10,line width=0.5pt] (3.73,3.93) -- (4.27,4.07);
+  \draw[white,opacity=0.10,line width=0.5pt] (3.72,4.97) -- (4.28,5.03);
+  \draw[white,opacity=0.10,line width=0.5pt] (3.72,6.01) -- (4.28,5.99);
+  \draw[white,opacity=0.10,line width=0.5pt] (3.72,7.05) -- (4.28,6.95);
+  \draw[white,opacity=0.10,line width=0.5pt] (3.73,8.09) -- (4.27,7.91);
+  \draw[white,opacity=0.10,line width=0.5pt] (3.75,9.12) -- (4.25,8.88);
+  \draw[white,opacity=0.10,line width=0.5pt] (3.76,10.15) -- (4.24,9.85);
+  \draw[white,opacity=0.10,line width=0.5pt] (3.78,11.17) -- (4.22,10.83);
+  \draw[white,opacity=0.10,line width=0.5pt] (3.80,12.19) -- (4.20,11.81);
+  \draw[white,opacity=0.10,line width=0.5pt] (3.81,13.21) -- (4.19,12.79);
+  \draw[white,opacity=0.10,line width=0.5pt] (4.73,2.94) -- (5.27,3.06);
+  \draw[white,opacity=0.10,line width=0.5pt] (4.72,3.98) -- (5.28,4.02);
+  \draw[white,opacity=0.10,line width=0.5pt] (4.72,5.03) -- (5.28,4.97);
+  \draw[white,opacity=0.10,line width=0.5pt] (4.73,6.07) -- (5.27,5.93);
+  \draw[white,opacity=0.10,line width=0.5pt] (4.74,7.10) -- (5.26,6.90);
+  \draw[white,opacity=0.10,line width=0.5pt] (4.75,8.13) -- (5.25,7.87);
+  \draw[white,opacity=0.10,line width=0.5pt] (4.77,9.16) -- (5.23,8.84);
+  \draw[white,opacity=0.10,line width=0.5pt] (4.79,10.18) -- (5.21,9.82);
+  \draw[white,opacity=0.10,line width=0.5pt] (4.80,11.20) -- (5.20,10.80);
+  \draw[white,opacity=0.10,line width=0.5pt] (4.82,12.21) -- (5.18,11.79);
+  \draw[white,opacity=0.10,line width=0.5pt] (4.83,13.22) -- (5.17,12.78);
+  \draw[white,opacity=0.10,line width=0.5pt] (5.73,2.94) -- (6.27,3.06);
+  \draw[white,opacity=0.10,line width=0.5pt] (5.72,3.98) -- (6.28,4.02);
+  \draw[white,opacity=0.10,line width=0.5pt] (5.72,5.02) -- (6.28,4.98);
+  \draw[white,opacity=0.10,line width=0.5pt] (5.73,6.06) -- (6.27,5.94);
+  \draw[white,opacity=0.10,line width=0.5pt] (5.74,7.10) -- (6.26,6.90);
+  \draw[white,opacity=0.10,line width=0.5pt] (5.75,8.13) -- (6.25,7.87);
+  \draw[white,opacity=0.10,line width=0.5pt] (5.77,9.16) -- (6.23,8.84);
+  \draw[white,opacity=0.10,line width=0.5pt] (5.79,10.18) -- (6.21,9.82);
+  \draw[white,opacity=0.10,line width=0.5pt] (5.80,11.20) -- (6.20,10.80);
+  \draw[white,opacity=0.10,line width=0.5pt] (5.82,12.21) -- (6.18,11.79);
+  \draw[white,opacity=0.10,line width=0.5pt] (5.83,13.22) -- (6.17,12.78);
+  \draw[white,opacity=0.10,line width=0.5pt] (6.74,2.89) -- (7.26,3.11);
+  \draw[white,opacity=0.10,line width=0.5pt] (6.73,3.92) -- (7.27,4.08);
+  \draw[white,opacity=0.10,line width=0.5pt] (6.72,4.96) -- (7.28,5.04);
+  \draw[white,opacity=0.10,line width=0.5pt] (6.72,6.00) -- (7.28,6.00);
+  \draw[white,opacity=0.10,line width=0.5pt] (6.72,7.05) -- (7.28,6.95);
+  \draw[white,opacity=0.10,line width=0.5pt] (6.73,8.08) -- (7.27,7.92);
+  \draw[white,opacity=0.10,line width=0.5pt] (6.75,9.12) -- (7.25,8.88);
+  \draw[white,opacity=0.10,line width=0.5pt] (6.76,10.15) -- (7.24,9.85);
+  \draw[white,opacity=0.10,line width=0.5pt] (6.78,11.17) -- (7.22,10.83);
+  \draw[white,opacity=0.10,line width=0.5pt] (6.79,12.19) -- (7.21,11.81);
+  \draw[white,opacity=0.10,line width=0.5pt] (6.81,13.20) -- (7.19,12.80);
+  \draw[white,opacity=0.10,line width=0.5pt] (7.78,2.83) -- (8.22,3.17);
+  \draw[white,opacity=0.10,line width=0.5pt] (7.76,3.85) -- (8.24,4.15);
+  \draw[white,opacity=0.10,line width=0.5pt] (7.75,4.88) -- (8.25,5.12);
+  \draw[white,opacity=0.10,line width=0.5pt] (7.73,5.91) -- (8.27,6.09);
+  \draw[white,opacity=0.10,line width=0.5pt] (7.72,6.95) -- (8.28,7.05);
+  \draw[white,opacity=0.10,line width=0.5pt] (7.72,7.99) -- (8.28,8.01);
+  \draw[white,opacity=0.10,line width=0.5pt] (7.72,9.03) -- (8.28,8.97);
+  \draw[white,opacity=0.10,line width=0.5pt] (7.73,10.07) -- (8.27,9.93);
+  \draw[white,opacity=0.10,line width=0.5pt] (7.74,11.11) -- (8.26,10.89);
+  \draw[white,opacity=0.10,line width=0.5pt] (7.76,12.14) -- (8.24,11.86);
+  \draw[white,opacity=0.10,line width=0.5pt] (7.77,13.16) -- (8.23,12.84);
+  \draw[white,opacity=0.10,line width=0.5pt] (8.81,2.79) -- (9.19,3.21);
+  \draw[white,opacity=0.10,line width=0.5pt] (8.80,3.80) -- (9.20,4.20);
+  \draw[white,opacity=0.10,line width=0.5pt] (8.79,4.82) -- (9.21,5.18);
+  \draw[white,opacity=0.10,line width=0.5pt] (8.77,5.84) -- (9.23,6.16);
+  \draw[white,opacity=0.10,line width=0.5pt] (8.75,6.87) -- (9.25,7.13);
+  \draw[white,opacity=0.10,line width=0.5pt] (8.74,7.90) -- (9.26,8.10);
+  \draw[white,opacity=0.10,line width=0.5pt] (8.73,8.94) -- (9.27,9.06);
+  \draw[white,opacity=0.10,line width=0.5pt] (8.72,9.98) -- (9.28,10.02);
+  \draw[white,opacity=0.10,line width=0.5pt] (8.72,11.02) -- (9.28,10.98);
+  \draw[white,opacity=0.10,line width=0.5pt] (8.73,12.06) -- (9.27,11.94);
+  \draw[white,opacity=0.10,line width=0.5pt] (8.74,13.10) -- (9.26,12.90);
+  \draw[white,opacity=0.10,line width=0.5pt] (9.83,2.77) -- (10.17,3.23);
+  \draw[white,opacity=0.10,line width=0.5pt] (9.82,3.78) -- (10.18,4.22);
+  \draw[white,opacity=0.10,line width=0.5pt] (9.81,4.80) -- (10.19,5.20);
+  \draw[white,opacity=0.10,line width=0.5pt] (9.79,5.81) -- (10.21,6.19);
+  \draw[white,opacity=0.10,line width=0.5pt] (9.78,6.83) -- (10.22,7.17);
+  \draw[white,opacity=0.10,line width=0.5pt] (9.76,7.86) -- (10.24,8.14);
+  \draw[white,opacity=0.10,line width=0.5pt] (9.74,8.88) -- (10.26,9.12);
+  \draw[white,opacity=0.10,line width=0.5pt] (9.73,9.92) -- (10.27,10.08);
+  \draw[white,opacity=0.10,line width=0.5pt] (9.72,10.96) -- (10.28,11.04);
+  \draw[white,opacity=0.10,line width=0.5pt] (9.72,12.00) -- (10.28,12.00);
+  \draw[white,opacity=0.10,line width=0.5pt] (9.72,13.04) -- (10.28,12.96);
+  \draw[white,opacity=0.10,line width=0.5pt] (10.83,2.77) -- (11.17,3.23);
+  \draw[white,opacity=0.10,line width=0.5pt] (10.82,3.78) -- (11.18,4.22);
+  \draw[white,opacity=0.10,line width=0.5pt] (10.81,4.80) -- (11.19,5.20);
+  \draw[white,opacity=0.10,line width=0.5pt] (10.79,5.81) -- (11.21,6.19);
+  \draw[white,opacity=0.10,line width=0.5pt] (10.78,6.83) -- (11.22,7.17);
+  \draw[white,opacity=0.10,line width=0.5pt] (10.76,7.86) -- (11.24,8.14);
+  \draw[white,opacity=0.10,line width=0.5pt] (10.74,8.88) -- (11.26,9.12);
+  \draw[white,opacity=0.10,line width=0.5pt] (10.73,9.92) -- (11.27,10.08);
+  \draw[white,opacity=0.10,line width=0.5pt] (10.72,10.96) -- (11.28,11.04);
+  \draw[white,opacity=0.10,line width=0.5pt] (10.72,12.00) -- (11.28,12.00);
+  \draw[white,opacity=0.10,line width=0.5pt] (10.72,13.04) -- (11.28,12.96);
+  \draw[white,opacity=0.10,line width=0.5pt] (11.81,2.79) -- (12.19,3.21);
+  \draw[white,opacity=0.10,line width=0.5pt] (11.80,3.80) -- (12.20,4.20);
+  \draw[white,opacity=0.10,line width=0.5pt] (11.79,4.82) -- (12.21,5.18);
+  \draw[white,opacity=0.10,line width=0.5pt] (11.77,5.84) -- (12.23,6.16);
+  \draw[white,opacity=0.10,line width=0.5pt] (11.75,6.87) -- (12.25,7.13);
+  \draw[white,opacity=0.10,line width=0.5pt] (11.74,7.90) -- (12.26,8.10);
+  \draw[white,opacity=0.10,line width=0.5pt] (11.73,8.94) -- (12.27,9.06);
+  \draw[white,opacity=0.10,line width=0.5pt] (11.72,9.98) -- (12.28,10.02);
+  \draw[white,opacity=0.10,line width=0.5pt] (11.72,11.02) -- (12.28,10.98);
+  \draw[white,opacity=0.10,line width=0.5pt] (11.73,12.06) -- (12.27,11.94);
+  \draw[white,opacity=0.10,line width=0.5pt] (11.74,13.10) -- (12.26,12.90);
+  \draw[white,opacity=0.10,line width=0.5pt] (12.78,2.83) -- (13.22,3.17);
+  \draw[white,opacity=0.10,line width=0.5pt] (12.76,3.85) -- (13.24,4.15);
+  \draw[white,opacity=0.10,line width=0.5pt] (12.75,4.88) -- (13.25,5.12);
+  \draw[white,opacity=0.10,line width=0.5pt] (12.73,5.91) -- (13.27,6.09);
+  \draw[white,opacity=0.10,line width=0.5pt] (12.72,6.95) -- (13.28,7.05);
+  \draw[white,opacity=0.10,line width=0.5pt] (12.72,7.99) -- (13.28,8.01);
+  \draw[white,opacity=0.10,line width=0.5pt] (12.72,9.03) -- (13.28,8.97);
+  \draw[white,opacity=0.10,line width=0.5pt] (12.73,10.07) -- (13.27,9.93);
+  \draw[white,opacity=0.10,line width=0.5pt] (12.74,11.11) -- (13.26,10.89);
+  \draw[white,opacity=0.10,line width=0.5pt] (12.76,12.14) -- (13.24,11.86);
+  \draw[white,opacity=0.10,line width=0.5pt] (12.77,13.16) -- (13.23,12.84);
+  \draw[white,opacity=0.10,line width=0.5pt] (13.74,2.89) -- (14.26,3.11);
+  \draw[white,opacity=0.10,line width=0.5pt] (13.73,3.92) -- (14.27,4.08);
+  \draw[white,opacity=0.10,line width=0.5pt] (13.72,4.96) -- (14.28,5.04);
+  \draw[white,opacity=0.10,line width=0.5pt] (13.72,6.00) -- (14.28,6.00);
+  \draw[white,opacity=0.10,line width=0.5pt] (13.72,7.05) -- (14.28,6.95);
+  \draw[white,opacity=0.10,line width=0.5pt] (13.73,8.08) -- (14.27,7.92);
+  \draw[white,opacity=0.10,line width=0.5pt] (13.75,9.12) -- (14.25,8.88);
+  \draw[white,opacity=0.10,line width=0.5pt] (13.76,10.15) -- (14.24,9.85);
+  \draw[white,opacity=0.10,line width=0.5pt] (13.78,11.17) -- (14.22,10.83);
+  \draw[white,opacity=0.10,line width=0.5pt] (13.79,12.19) -- (14.21,11.81);
+  \draw[white,opacity=0.10,line width=0.5pt] (13.81,13.20) -- (14.19,12.80);
+  \draw[white,opacity=0.10,line width=0.5pt] (14.73,2.94) -- (15.27,3.06);
+  \draw[white,opacity=0.10,line width=0.5pt] (14.72,3.98) -- (15.28,4.02);
+  \draw[white,opacity=0.10,line width=0.5pt] (14.72,5.02) -- (15.28,4.98);
+  \draw[white,opacity=0.10,line width=0.5pt] (14.73,6.06) -- (15.27,5.94);
+  \draw[white,opacity=0.10,line width=0.5pt] (14.74,7.10) -- (15.26,6.90);
+  \draw[white,opacity=0.10,line width=0.5pt] (14.75,8.13) -- (15.25,7.87);
+  \draw[white,opacity=0.10,line width=0.5pt] (14.77,9.16) -- (15.23,8.84);
+  \draw[white,opacity=0.10,line width=0.5pt] (14.79,10.18) -- (15.21,9.82);
+  \draw[white,opacity=0.10,line width=0.5pt] (14.80,11.20) -- (15.20,10.80);
+  \draw[white,opacity=0.10,line width=0.5pt] (14.82,12.21) -- (15.18,11.79);
+  \draw[white,opacity=0.10,line width=0.5pt] (14.83,13.22) -- (15.17,12.78);
+  \draw[white,opacity=0.10,line width=0.5pt] (15.73,2.94) -- (16.27,3.06);
+  \draw[white,opacity=0.10,line width=0.5pt] (15.72,3.98) -- (16.28,4.02);
+  \draw[white,opacity=0.10,line width=0.5pt] (15.72,5.03) -- (16.28,4.97);
+  \draw[white,opacity=0.10,line width=0.5pt] (15.73,6.07) -- (16.27,5.93);
+  \draw[white,opacity=0.10,line width=0.5pt] (15.74,7.10) -- (16.26,6.90);
+  \draw[white,opacity=0.10,line width=0.5pt] (15.75,8.13) -- (16.25,7.87);
+  \draw[white,opacity=0.10,line width=0.5pt] (15.77,9.16) -- (16.23,8.84);
+  \draw[white,opacity=0.10,line width=0.5pt] (15.79,10.18) -- (16.21,9.82);
+  \draw[white,opacity=0.10,line width=0.5pt] (15.80,11.20) -- (16.20,10.80);
+  \draw[white,opacity=0.10,line width=0.5pt] (15.82,12.21) -- (16.18,11.79);
+  \draw[white,opacity=0.10,line width=0.5pt] (15.83,13.22) -- (16.17,12.78);
+  \draw[white,opacity=0.10,line width=0.5pt] (16.74,2.89) -- (17.26,3.11);
+  \draw[white,opacity=0.10,line width=0.5pt] (16.73,3.93) -- (17.27,4.07);
+  \draw[white,opacity=0.10,line width=0.5pt] (16.72,4.97) -- (17.28,5.03);
+  \draw[white,opacity=0.10,line width=0.5pt] (16.72,6.01) -- (17.28,5.99);
+  \draw[white,opacity=0.10,line width=0.5pt] (16.72,7.05) -- (17.28,6.95);
+  \draw[white,opacity=0.10,line width=0.5pt] (16.73,8.09) -- (17.27,7.91);
+  \draw[white,opacity=0.10,line width=0.5pt] (16.75,9.12) -- (17.25,8.88);
+  \draw[white,opacity=0.10,line width=0.5pt] (16.76,10.15) -- (17.24,9.85);
+  \draw[white,opacity=0.10,line width=0.5pt] (16.78,11.17) -- (17.22,10.83);
+  \draw[white,opacity=0.10,line width=0.5pt] (16.80,12.19) -- (17.20,11.81);
+  \draw[white,opacity=0.10,line width=0.5pt] (16.81,13.21) -- (17.19,12.79);
+  \draw[white,opacity=0.10,line width=0.5pt] (17.78,2.83) -- (18.22,3.17);
+  \draw[white,opacity=0.10,line width=0.5pt] (17.76,3.85) -- (18.24,4.15);
+  \draw[white,opacity=0.10,line width=0.5pt] (17.75,4.88) -- (18.25,5.12);
+  \draw[white,opacity=0.10,line width=0.5pt] (17.73,5.92) -- (18.27,6.08);
+  \draw[white,opacity=0.10,line width=0.5pt] (17.72,6.95) -- (18.28,7.05);
+  \draw[white,opacity=0.10,line width=0.5pt] (17.72,8.00) -- (18.28,8.00);
+  \draw[white,opacity=0.10,line width=0.5pt] (17.72,9.04) -- (18.28,8.96);
+  \draw[white,opacity=0.10,line width=0.5pt] (17.73,10.08) -- (18.27,9.92);
+  \draw[white,opacity=0.10,line width=0.5pt] (17.74,11.11) -- (18.26,10.89);
+  \draw[white,opacity=0.10,line width=0.5pt] (17.76,12.14) -- (18.24,11.86);
+  \draw[white,opacity=0.10,line width=0.5pt] (17.77,13.17) -- (18.23,12.83);
+  \draw[white,opacity=0.10,line width=0.5pt] (18.81,2.79) -- (19.19,3.21);
+  \draw[white,opacity=0.10,line width=0.5pt] (18.80,3.81) -- (19.20,4.19);
+  \draw[white,opacity=0.10,line width=0.5pt] (18.78,4.82) -- (19.22,5.18);
+  \draw[white,opacity=0.10,line width=0.5pt] (18.77,5.84) -- (19.23,6.16);
+  \draw[white,opacity=0.10,line width=0.5pt] (18.75,6.87) -- (19.25,7.13);
+  \draw[white,opacity=0.10,line width=0.5pt] (18.74,7.90) -- (19.26,8.10);
+  \draw[white,opacity=0.10,line width=0.5pt] (18.73,8.94) -- (19.27,9.06);
+  \draw[white,opacity=0.10,line width=0.5pt] (18.72,9.98) -- (19.28,10.02);
+  \draw[white,opacity=0.10,line width=0.5pt] (18.72,11.02) -- (19.28,10.98);
+  \draw[white,opacity=0.10,line width=0.5pt] (18.73,12.06) -- (19.27,11.94);
+  \draw[white,opacity=0.10,line width=0.5pt] (18.74,13.10) -- (19.26,12.90);
+  \draw[white,opacity=0.10,line width=0.5pt] (19.83,2.78) -- (20.17,3.22);
+  \draw[white,opacity=0.10,line width=0.5pt] (19.82,3.79) -- (20.18,4.21);
+  \draw[white,opacity=0.10,line width=0.5pt] (19.81,4.80) -- (20.19,5.20);
+  \draw[white,opacity=0.10,line width=0.5pt] (19.79,5.81) -- (20.21,6.19);
+  \draw[white,opacity=0.10,line width=0.5pt] (19.78,6.83) -- (20.22,7.17);
+  \draw[white,opacity=0.10,line width=0.5pt] (19.76,7.86) -- (20.24,8.14);
+  \draw[white,opacity=0.10,line width=0.5pt] (19.74,8.89) -- (20.26,9.11);
+  \draw[white,opacity=0.10,line width=0.5pt] (19.73,9.92) -- (20.27,10.08);
+  \draw[white,opacity=0.10,line width=0.5pt] (19.72,10.96) -- (20.28,11.04);
+  \draw[white,opacity=0.10,line width=0.5pt] (19.72,12.00) -- (20.28,12.00);
+  \draw[white,opacity=0.10,line width=0.5pt] (19.72,13.04) -- (20.28,12.96);
+  % eixo
+  \draw[white,opacity=0.5,line width=0.6pt,-{Stealth}] (0.4,8.2) -- (20.6,8.2);
+  % polinômios de Taylor de sen(x) se aproximando da curva
+  \begin{scope}\clip (0.4,2.4) rectangle (20.6,14.2);
+  \draw[ouro,opacity=0.25,line width=1.1pt] plot[domain=4.10:16.90,samples=160,variable=\t] (\t,{8.2+3*(0+(((\t-10.5)/1.60000))^1)});
+  \draw[ouro,opacity=0.35,line width=1.1pt] plot[domain=5.88:15.12,samples=160,variable=\t] (\t,{8.2+3*(0+(((\t-10.5)/1.60000))^1-(((\t-10.5)/2.90739))^3)});
+  \draw[ouro,opacity=0.45,line width=1.1pt] plot[domain=5.00:16.00,samples=160,variable=\t] (\t,{8.2+3*(0+(((\t-10.5)/1.60000))^1-(((\t-10.5)/2.90739))^3+(((\t-10.5)/4.16827))^5)});
+  \draw[ouro,opacity=0.6,line width=1.1pt] plot[domain=3.91:17.09,samples=160,variable=\t] (\t,{8.2+3*(0+(((\t-10.5)/1.60000))^1-(((\t-10.5)/2.90739))^3+(((\t-10.5)/4.16827))^5-(((\t-10.5)/5.40802))^7)});
+  \draw[ouro,opacity=0.75,line width=1.1pt] plot[domain=2.76:18.24,samples=160,variable=\t] (\t,{8.2+3*(0+(((\t-10.5)/1.60000))^1-(((\t-10.5)/2.90739))^3+(((\t-10.5)/4.16827))^5-(((\t-10.5)/5.40802))^7+(((\t-10.5)/6.63547))^9)});
+  \draw[ouro,opacity=0.9,line width=1.1pt] plot[domain=1.59:19.41,samples=160,variable=\t] (\t,{8.2+3*(0+(((\t-10.5)/1.60000))^1-(((\t-10.5)/2.90739))^3+(((\t-10.5)/4.16827))^5-(((\t-10.5)/5.40802))^7+(((\t-10.5)/6.63547))^9-(((\t-10.5)/7.85478))^11)});
+  \end{scope}
+  % a função
+  \draw[white,line width=1.8pt] plot[domain=0.5:20.5,samples=200,variable=\t] (\t,{8.2+3*sin(deg((\t-10.5)/1.6))});
+  % fórmulas em marca-d'água
+  \node[white,opacity=0.16,scale=1.4] at (5.4,16.2) {$\displaystyle \sen x=\sum_{n=0}^{\infty}\frac{(-1)^n\,x^{2n+1}}{(2n+1)!}$};
+  \node[white,opacity=0.16,scale=1.4] at (15.2,16.2) {$\displaystyle \frac{dy}{dt}=ky\ \Rightarrow\ y=y_0\,e^{kt}$};
+  % título
+  \node[anchor=north west,text=ouro,font=\barlow\large] at (2,27.4)
+    {E\,D\,I\,Ç\,Ã\,O\ \ C\,O\,N\,D\,E\,N\,S\,A\,D\,A\ \ E\,M\ \ P\,O\,R\,T\,U\,G\,U\,Ê\,S};
+  \node[anchor=north east] at (19,27.55) {\includegraphics[height=0.9cm]{logo-nexusbi-negativo.pdf}};
+  \draw[ouro,line width=1.2pt] (2,26.55) -- (6.5,26.55);
+  \node[anchor=north west,text=white,font=\barlow\bfseries,scale=7.2] at (1.75,26.2) {Cálculo\,\textcolor{ouro}{II}};
+  \node[anchor=north west,text=white,opacity=0.9,font=\barlow\Large] at (2,21.6)
+    {Equações diferenciais \textperiodcentered{} Séries \textperiodcentered{} Curvas paramétricas e polares};
+  % faixa com o padrão da marca: o "x" em seta, verde sobre grafite
+  \begin{scope}\clip (0,0) rectangle (21,0.75);
+  \foreach \i in {0,...,22}{\foreach \j in {0,1}{
+    \pgfmathsetmacro{\px}{\i*0.95+\j*0.47-0.4}\pgfmathsetmacro{\py}{\j*0.42-0.12}
+    \fill[ouro,rotate around={-25:(\px,\py)}] (\px,\py) -- ++(0.16,0) -- ++(0.24,0.2) -- ++(-0.24,0.2) -- ++(-0.16,0) -- ++(0.24,-0.2) -- cycle;}}
+  \end{scope}
+  % rodapé da capa
+  \draw[ouro,line width=0.8pt] (2,1.55) -- (19,1.55);
+  \node[anchor=west,text=white,opacity=0.85,font=\barlow\small] at (2,1.05)
+    {Baseado em \emph{Calculus Volume 2}, de Gilbert Strang e Edwin ``Jed'' Herman};
+  \node[anchor=east,text=white,opacity=0.6,font=\scriptsize] at (19,1.05)
+    {Access for free at openstax.org};
+\end{scope}
+\end{tikzpicture}
+\end{titlepage}
