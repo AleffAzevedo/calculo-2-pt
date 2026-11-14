@@ -111,7 +111,7 @@ def gerar(n, animar=True):
 
 if __name__ == '__main__':
     animar = '--sem-animacoes' not in sys.argv
-    caps = [int(a) for a in sys.argv[1:] if a.isdigit()] or [1]
+    caps = [int(a) for a in sys.argv[1:] if a.isdigit()] or [1, 2]
     for n in caps:
         print(f'Capítulo {n}')
         gerar(n, animar)

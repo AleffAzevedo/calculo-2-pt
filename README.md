@@ -14,8 +14,8 @@ neste repositório.
 | Capítulo | Tema | Livro | Exercícios resolvidos |
 |---|---|---|---|
 | 1 | Introdução às equações diferenciais | ✅ | [65 exercícios, 11 resolvidos](exercicios/cap1/README.md) |
-| 2 | Sequências e séries | em produção | — |
-| 3 | Séries de potências | — | — |
+| 2 | Sequências e séries | ✅ | [65 exercícios, 11 resolvidos](exercicios/cap2/README.md) |
+| 3 | Séries de potências | em produção | — |
 | 4 | Equações paramétricas e coordenadas polares | — | — |
 
 Notação brasileira (sen, tg, arcsen…) e projeto gráfico com a identidade visual da **Nexus BI**
